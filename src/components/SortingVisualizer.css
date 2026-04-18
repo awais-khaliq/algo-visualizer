@@ -1,0 +1,51 @@
+.visualizer-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 2rem;
+  background: radial-gradient(circle at center, var(--bg-panel) 0%, var(--bg-color) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle grid background for the visualizer area to make it look "techy" */
+.visualizer-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.array-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  z-index: 1;
+  /* Add a bottom glow line */
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 20px -10px var(--brand-primary-glow);
+}
+
+.array-bar {
+  background-color: var(--bar-default);
+  width: 100%; /* Flex will distribute the width */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  box-shadow: 0 0 10px var(--bar-default-glow);
+  transition: height 0.05s ease-in-out, background-color 0.1s ease-in;
+}
+
+/* Base states handled by JS, but if we need CSS overrides */
