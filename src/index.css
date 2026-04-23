@@ -1,20 +1,21 @@
 :root {
-  --bg-color: #0b0f19;
-  --bg-panel: #151a2a;
-  --text-main: #e2e8f0;
-  --text-muted: #94a3b8;
+  --bg-color: #050505;
+  --bg-panel: #111111;
+  --text-main: #f4f4f5;
+  --text-muted: #71717a;
   
-  --brand-primary: #0ea5e9;
-  --brand-primary-glow: rgba(14, 165, 233, 0.5);
+  --brand-primary: #b1ff32;
+  --brand-primary-glow: rgba(177, 255, 50, 0.4);
   
-  --bar-default: #3b82f6;
-  --bar-default-glow: rgba(59, 130, 246, 0.6);
+  --bar-default: #3f3f46;
+  --bar-default-glow: rgba(63, 63, 70, 0.6);
   --bar-compare: #eab308;
   --bar-swap: #ef4444;
-  --bar-sorted: #10b981;
-  --bar-sorted-glow: rgba(16, 185, 129, 0.6);
+  --bar-sorted: #b1ff32;
+  --bar-sorted-glow: rgba(177, 255, 50, 0.6);
 
-  --font-family: 'Outfit', sans-serif;
+  --font-family: 'Space Grotesk', sans-serif;
+  --font-pixel: 'Press Start 2P', cursive;
   --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -40,6 +41,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+}
+
+/* Glassmorphic Panel Overrides */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-panel) var(--bg-color);
 }
 
 /* Custom Webkit Scrollbar */
