@@ -1,16 +1,33 @@
-# React + Vite
+# Algorithm Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based visualization tool for understanding how various sorting algorithms process data in real-time. Built to help computer science students and developers intuitively grasp algorithmic time complexities and data manipulation.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Sorting algorithms can be abstract and difficult to comprehend through code alone. This application provides a step-by-step visual representation of popular sorting methods. It renders a dynamic array of values and visually tracks the comparisons, swaps, and sorted elements as the algorithm executes.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Real-Time Visualization: Watch elements swap and sort interactively.
+* Multiple Algorithms: Includes implementations for Bubble Sort, Merge Sort, Quick Sort, and more.
+* Adjustable Constraints: Modify the size of the dataset and the speed of the visualization to observe performance differences.
+* Responsive Interface: Clean, custom CSS styling focused on content visibility and user control.
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Frontend Framework: React (initialized via Vite for modern fast-refresh builds)
+* Styling: Custom CSS
+* State Management: React Hooks
+
+## How to Run Locally
+
+1. Clone this repository.
+2. Navigate into the project directory and install the necessary dependencies:
+   npm install
+3. Start the local development server:
+   npm run dev
+4. The application will be accessible at http://localhost:5173.
+
+## Usage
+
+Once the application is running, generate a new array using the control panel. Select your desired sorting algorithm and click "Sort" to begin the visualization. You can adjust the speed slider before or during the process to slow down or speed up the animation.
