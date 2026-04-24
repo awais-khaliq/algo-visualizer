@@ -23,11 +23,15 @@ Sorting algorithms can be abstract and difficult to comprehend through code alon
 
 1. Clone this repository.
 2. Navigate into the project directory and install the necessary dependencies:
+   ```bash
    npm install
+   ```
 3. Start the local development server:
+   ```bash
    npm run dev
+   ```
 4. The application will be accessible at http://localhost:5173.
 
 ## Usage
 
-Once the application is running, generate a new array using the control panel. Select your desired sorting algorithm and click "Sort" to begin the visualization. You can adjust the speed slider before or during the process to slow down or speed up the animation.
+Once the application is running, generate a new array using the control panel. Select a sorting algorithm and click "Sort" to begin the visualization. The speed slider lets you slow down or speed up the animation.
